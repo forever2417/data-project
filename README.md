@@ -1,5 +1,4 @@
 # Data science project repository
-Portfolio
 
 Hello! I am WONG CHUN WAH, Derek. This repository stores all the data project I engaged before.
 
