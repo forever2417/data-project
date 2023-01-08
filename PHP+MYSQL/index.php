@@ -8,10 +8,10 @@
     <h2>New open discount!</h2>
     </div>
     <nav class="links" style="--items: 4">
-    <a href="?cat=15&product_item=all" >All</a>
-    <a href="?cat=15&product_item=clothes" >Clothes</a>
-    <a href="?cat=15&product_item=shoes" >Shoes</a>
-    <a href="?cat=15&product_item=pants" >Pants</a>
+    <a href="?cat=15&product_item=all">All</a>
+    <a href="?cat=15&product_item=clothes">Clothes</a>
+    <a href="?cat=15&product_item=shoes">Shoes</a>
+    <a href="?cat=15&product_item=pants">Pants</a>
     
     </nav>
     
@@ -45,7 +45,7 @@
 
                     while ($product = mysqli_fetch_assoc($productQ)){
                         echo '<div class = "product-item">
-                                    <div class = "product-img" style="box-shadow: 2px 2px 5px grey;" alt="product-image">
+                                    <div class = "product-img" alt="product-image">
 
                                         <img src="images/products/'.$product['image'].'">
                                             <div>

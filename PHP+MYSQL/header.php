@@ -22,20 +22,22 @@ include 'dbConnect.php';?>
 <body>
 <nav style="background-color:#828282;border-radius:12px;">
     <ul class="clientMenu">
-        <li><a href="/">Home</a></li>
-        <li><a href="about.php">About</a></li>
+        <li class="underlineAnimation"><a href="/">Home</a></li>
+        <li class="underlineAnimation"><a href="about.php">About</a></li>
     </ul>
     <ul class="staffMenu">
     <?php 
+    
     session_start();
     if(isset($_SESSION['email']))
     {    
         echo 
         '<li><img src="images/others/staff.png" alt="staff" class="staffImage" style="height:30px;width:30px"></li> 
-        <li><a href="allOrders.php">All orders</a></li>
-        <li><a href="functions.php?op=logout">logout</a></li>';
+        <li class="underlineAnimation"><a href="allOrders.php">All orders</a></li>
+        <li class="underlineAnimation"><a href="productManage.php">Manage product</a></li>
+        <li class="underlineAnimation"><a href="functions.php?op=logout">Logout</a></li>';
     } else{
-        echo '<li><a href="login.php">Staff login</a></li>';
+        echo '<li><a href="login.php" class="underlineAnimation">Staff login</a></li>';
     }
     ?>
     </ul>
